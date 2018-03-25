@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <link rel="stylesheet" type="text/css" href="3DPrinterCSS.css">
+        
+    <div class="title">
+        <h2 class="title">Graceland University - 3D Printing</h2>
+    </div>
+        
+    <div class="sidenav">
+        <a href="homePage.html">Home</a>
+        <a href="orderPage.html">Order</a>
+        <a href="helpPage.html">Help</a>
+    </div>
+
+    <div id="orderpage" class="orderpage">
+
+        <h2 class="orderpage">Order a 3D Object</h2>
+
+        <div class="submit">
+            <form method="post" action="3DPrinter.php" enctype="multipart/form-data">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+                <label for="department">Department</label>
+                <select name="Department" class="department">
+                        <option>Select a department...</option>
+                        <option value="art">Art</option>
+                        <option value="biology">Biology</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="computerscience">Computer Science</option>
+                        <option value="education">Education</option>
+                        <option value="individual">Individual</option>
+                        <option value="math">Mathematics</option>
+                        <option value="music">Music</option>
+                </select>
+
+                <label for="color">Color</label>
+                <select name="Color" class="color" id="color">
+                        <option>Select a color...</option>
+                        <option value="white">White</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="black">Black</option>
+                        <option value="blue">Blue</option>
+                </select>
+
+                <!--<label for="file">Choose a file to upload</label>
+                <input type="file" id="file" name="file">-->
+
+                <input type="submit" value="Submit" id="submitButton">
+
+		    </form>
+	    </div>
+    </div>
+
+
+
+</head>
+</html>
